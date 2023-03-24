@@ -1,0 +1,34 @@
+git add .
+git commit -m 'initial commit'
+git touch SLLab1.java
+git add .
+git commit -m 'add java class'
+
+git branch bug1
+git checkut bug1
+git add .
+git commit -m 'а Fix wrong loop for reading'
+git checkout master
+
+git branch bug2
+git checkut bug2
+git add .
+git commit -m 'Fix wrong condition in filterOddNumbers'
+git checkout master
+
+git branch bug3
+git checkut bug3
+git add .
+git commit -m 'Fix method sumEvenNumbers'
+git checkout master
+git push
+git merge bug1
+git push
+git merge bug2
+git push 
+git checkout bug3
+git rebase master
+
+git push
+git merge bug3
+git push
