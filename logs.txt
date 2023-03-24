@@ -22,13 +22,13 @@ git add .
 git commit -m 'Fix method sumEvenNumbers'
 git checkout master
 git push
-git merge bug1
+git merge bug1  нема конфликт fast-forward
 git push
-git merge bug2
+git merge bug2 нема конфликт fast-forward
 git push 
 git checkout bug3
-git rebase master
+git rebase master  
 
 git push
-git merge bug3
+git merge bug3 нема конфликт recursive merge
 git push
